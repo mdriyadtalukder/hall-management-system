@@ -1,0 +1,99 @@
+[debug] [2022-12-10T13:00:00.261Z] ----------------------------------------------------------------------
+[debug] [2022-12-10T13:00:00.264Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Riyad Talukder\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2022-12-10T13:00:00.264Z] CLI Version:   10.6.0
+[debug] [2022-12-10T13:00:00.264Z] Platform:      win32
+[debug] [2022-12-10T13:00:00.265Z] Node Version:  v16.13.1
+[debug] [2022-12-10T13:00:00.297Z] Time:          Sat Dec 10 2022 19:00:00 GMT+0600 (Bangladesh Standard Time)
+[debug] [2022-12-10T13:00:00.298Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-12-10T13:00:00.372Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-12-10T13:00:00.372Z] > authorizing via signed-in user (mdriyadtalukder69@gmail.com)
+[debug] [2022-12-10T13:00:00.372Z] [iam] checking project hall-management-system-cd7ad for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2022-12-10T13:00:00.374Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/hall-management-system-cd7ad:testIamPermissions [none]
+[debug] [2022-12-10T13:00:00.375Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/hall-management-system-cd7ad:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-12-10T13:00:02.325Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/hall-management-system-cd7ad:testIamPermissions 200
+[debug] [2022-12-10T13:00:02.325Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/hall-management-system-cd7ad:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-12-10T13:00:02.326Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/hall-management-system-cd7ad [none]
+[debug] [2022-12-10T13:00:03.026Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/hall-management-system-cd7ad 200
+[debug] [2022-12-10T13:00:03.026Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/hall-management-system-cd7ad {"projectId":"hall-management-system-cd7ad","projectNumber":"861993382956","displayName":"hall-management-system","name":"projects/hall-management-system-cd7ad","resources":{"hostingSite":"hall-management-system-cd7ad"},"state":"ACTIVE","etag":"1_235dc0a2-083e-48d6-92be-b54d7ca5793f"}
+[info] 
+[info] === Deploying to 'hall-management-system-cd7ad'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2022-12-10T13:00:03.035Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/hall-management-system-cd7ad [none]
+[debug] [2022-12-10T13:00:03.638Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/hall-management-system-cd7ad 200
+[debug] [2022-12-10T13:00:03.638Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/hall-management-system-cd7ad {"projectId":"hall-management-system-cd7ad","projectNumber":"861993382956","displayName":"hall-management-system","name":"projects/hall-management-system-cd7ad","resources":{"hostingSite":"hall-management-system-cd7ad"},"state":"ACTIVE","etag":"1_235dc0a2-083e-48d6-92be-b54d7ca5793f"}
+[debug] [2022-12-10T13:00:03.642Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/861993382956/sites/hall-management-system-cd7ad/versions [none]
+[debug] [2022-12-10T13:00:03.642Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/861993382956/sites/hall-management-system-cd7ad/versions {"config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2022-12-10T13:00:05.276Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/861993382956/sites/hall-management-system-cd7ad/versions 200
+[debug] [2022-12-10T13:00:05.276Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/861993382956/sites/hall-management-system-cd7ad/versions {"name":"projects/861993382956/sites/hall-management-system-cd7ad/versions/f33ab47581fc5183","status":"CREATED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[info] i  hosting[hall-management-system-cd7ad]: beginning deploy... 
+[info] i  hosting[hall-management-system-cd7ad]: found 18 files in build 
+[debug] [2022-12-10T13:00:05.289Z] [hosting] uploading with 200 concurrency
+[debug] [2022-12-10T13:00:05.678Z] [hosting] hash cache [YnVpbGQ] stored for 18 files
+[debug] [2022-12-10T13:00:05.679Z] [hosting][hash queue][FINAL] {"max":299,"min":7,"avg":32.77777777777778,"active":0,"complete":18,"success":18,"errored":0,"retried":0,"total":18,"elapsed":310}
+[debug] [2022-12-10T13:00:05.679Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/861993382956/sites/hall-management-system-cd7ad/versions/f33ab47581fc5183:populateFiles [none]
+[debug] [2022-12-10T13:00:05.679Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/861993382956/sites/hall-management-system-cd7ad/versions/f33ab47581fc5183:populateFiles {"files":{"/favicon.ico":"3456836c8b1f89c5202ae62f06ef51f660b8b52af0efc25b56468cc0c789e46a","/logo192.png":"3ee59515172ee198f3be375979df15ac5345183e656720a381b8872b2a39dc8b","/logo512.png":"ee7e2f3fdb8209c4b6fd7bef6ba50d1b9dba30a25bb5c3126df057e1cb6f5331","/manifest.json":"aff3449bdc238776f5d6d967f19ec491b36aed5fb7f23ccff6500736fd58494a","/product.json":"1209a8d340e2b8f9d12056a95d9f1761a0f7f9dc1e6bbf62c72c7d73fab0c1dc","/robots.txt":"bfe106a3fb878dc83461c86818bf74fc1bdc7f28538ba613cd3e775516ce8b49","/asset-manifest.json":"45afc60a768be94a98c1d455b3d49a3053ad160a0d9056f5ae10a657bed8bd2e","/index.html":"9c6f15dbeb68a2400b32c08a0c187064484e0620475c51c963511a2f82a0927b","/static/js/787.30dc5369.chunk.js":"9447663eebacca105e1b7bdf3cf9acea2036a1934bfa08eaa83b1d0ec3c4fc63","/static/js/main.6449d585.js.LICENSE.txt":"9a2eb35429b1a621d5fdb9871f368e8177a584f90d0755bea8086ac75360b343","/static/js/787.30dc5369.chunk.js.map":"f85a0e70264f95f4da202c0c0c0d21b6a024d8d241305a0b58a71363f88eebc3","/static/media/icon.2d0941bd7193003c62d4.png":"e11df2c88bfa0e56a879bb98c903ee66c1be4a8a2a615459dc71865033d091bc","/static/css/main.60378780.css":"dddd13ea210b28678ec2450825b585ce5720e30d52ca3d2bfb00240766f5ba16","/static/media/img1.53d89c7593d3958c1e4a.jpg":"af5d04c108c303bca17c07e2b491f7539f65072296f8c6ea06da25f92a06f52f","/static/media/img2.acabf0738bd47285b355.jpg":"9f75ca6e3a701b9dda13f317c38ca7a6abc90cff20bf4e75a092a590bb064565","/static/js/main.6449d585.js":"4874b8d3a74596c04e9a6b70a10f3ab60f771b596b3b556d131da82693faeb37","/static/css/main.60378780.css.map":"533466945a2c7e08c426348d11b8e08491003d65771b190e61b9b7d98008ba48","/static/js/main.6449d585.js.map":"466285ea03fff45003b7441dcb20f70d4d224bc8c8f6e5abff1b025dad906194"}}
+[debug] [2022-12-10T13:00:07.119Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/861993382956/sites/hall-management-system-cd7ad/versions/f33ab47581fc5183:populateFiles 200
+[debug] [2022-12-10T13:00:07.119Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/861993382956/sites/hall-management-system-cd7ad/versions/f33ab47581fc5183:populateFiles {"uploadRequiredHashes":["4874b8d3a74596c04e9a6b70a10f3ab60f771b596b3b556d131da82693faeb37","466285ea03fff45003b7441dcb20f70d4d224bc8c8f6e5abff1b025dad906194","45afc60a768be94a98c1d455b3d49a3053ad160a0d9056f5ae10a657bed8bd2e","9c6f15dbeb68a2400b32c08a0c187064484e0620475c51c963511a2f82a0927b"],"uploadUrl":"https://upload-firebasehosting.googleapis.com/upload/sites/hall-management-system-cd7ad/versions/f33ab47581fc5183/files"}
+[debug] [2022-12-10T13:00:07.123Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/hall-management-system-cd7ad/versions/f33ab47581fc5183/files/4874b8d3a74596c04e9a6b70a10f3ab60f771b596b3b556d131da82693faeb37 [none]
+[debug] [2022-12-10T13:00:07.123Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/hall-management-system-cd7ad/versions/f33ab47581fc5183/files/4874b8d3a74596c04e9a6b70a10f3ab60f771b596b3b556d131da82693faeb37 [stream]
+[debug] [2022-12-10T13:00:07.125Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/hall-management-system-cd7ad/versions/f33ab47581fc5183/files/466285ea03fff45003b7441dcb20f70d4d224bc8c8f6e5abff1b025dad906194 [none]
+[debug] [2022-12-10T13:00:07.126Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/hall-management-system-cd7ad/versions/f33ab47581fc5183/files/466285ea03fff45003b7441dcb20f70d4d224bc8c8f6e5abff1b025dad906194 [stream]
+[debug] [2022-12-10T13:00:07.128Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/hall-management-system-cd7ad/versions/f33ab47581fc5183/files/45afc60a768be94a98c1d455b3d49a3053ad160a0d9056f5ae10a657bed8bd2e [none]
+[debug] [2022-12-10T13:00:07.128Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/hall-management-system-cd7ad/versions/f33ab47581fc5183/files/45afc60a768be94a98c1d455b3d49a3053ad160a0d9056f5ae10a657bed8bd2e [stream]
+[debug] [2022-12-10T13:00:07.130Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/hall-management-system-cd7ad/versions/f33ab47581fc5183/files/9c6f15dbeb68a2400b32c08a0c187064484e0620475c51c963511a2f82a0927b [none]
+[debug] [2022-12-10T13:00:07.130Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/hall-management-system-cd7ad/versions/f33ab47581fc5183/files/9c6f15dbeb68a2400b32c08a0c187064484e0620475c51c963511a2f82a0927b [stream]
+[debug] [2022-12-10T13:00:07.133Z] [hosting][populate queue][FINAL] {"max":1445,"min":1445,"avg":1445,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":1456}
+[debug] [2022-12-10T13:00:07.133Z] [hosting] uploads queued: 4
+[debug] [2022-12-10T13:00:09.777Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/hall-management-system-cd7ad/versions/f33ab47581fc5183/files/4874b8d3a74596c04e9a6b70a10f3ab60f771b596b3b556d131da82693faeb37 200
+[debug] [2022-12-10T13:00:09.778Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/hall-management-system-cd7ad/versions/f33ab47581fc5183/files/4874b8d3a74596c04e9a6b70a10f3ab60f771b596b3b556d131da82693faeb37 [stream]
+[debug] [2022-12-10T13:00:10.597Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/hall-management-system-cd7ad/versions/f33ab47581fc5183/files/466285ea03fff45003b7441dcb20f70d4d224bc8c8f6e5abff1b025dad906194 200
+[debug] [2022-12-10T13:00:10.597Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/hall-management-system-cd7ad/versions/f33ab47581fc5183/files/466285ea03fff45003b7441dcb20f70d4d224bc8c8f6e5abff1b025dad906194 [stream]
+[debug] [2022-12-10T13:00:10.802Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/hall-management-system-cd7ad/versions/f33ab47581fc5183/files/45afc60a768be94a98c1d455b3d49a3053ad160a0d9056f5ae10a657bed8bd2e 200
+[debug] [2022-12-10T13:00:10.803Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/hall-management-system-cd7ad/versions/f33ab47581fc5183/files/45afc60a768be94a98c1d455b3d49a3053ad160a0d9056f5ae10a657bed8bd2e [stream]
+[debug] [2022-12-10T13:00:10.849Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/hall-management-system-cd7ad/versions/f33ab47581fc5183/files/9c6f15dbeb68a2400b32c08a0c187064484e0620475c51c963511a2f82a0927b 200
+[debug] [2022-12-10T13:00:10.849Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/hall-management-system-cd7ad/versions/f33ab47581fc5183/files/9c6f15dbeb68a2400b32c08a0c187064484e0620475c51c963511a2f82a0927b [stream]
+[debug] [2022-12-10T13:00:10.850Z] [hosting][upload queue][FINAL] {"max":3727,"min":2658,"avg":3385.75,"active":0,"complete":4,"success":4,"errored":0,"retried":0,"total":4,"elapsed":3730}
+[info] +  hosting[hall-management-system-cd7ad]: file upload complete 
+[debug] [2022-12-10T13:00:10.852Z] [hosting] deploy completed after 5575ms
+[debug] [2022-12-10T13:00:10.858Z] [
+  {
+    "config": {
+      "public": "build",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ],
+      "site": "hall-management-system-cd7ad"
+    },
+    "site": "hall-management-system-cd7ad",
+    "version": "projects/861993382956/sites/hall-management-system-cd7ad/versions/f33ab47581fc5183"
+  }
+]
+[info] i  hosting[hall-management-system-cd7ad]: finalizing version... 
+[debug] [2022-12-10T13:00:10.861Z] >>> [apiv2][query] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/861993382956/sites/hall-management-system-cd7ad/versions/f33ab47581fc5183 updateMask=status
+[debug] [2022-12-10T13:00:10.862Z] >>> [apiv2][body] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/861993382956/sites/hall-management-system-cd7ad/versions/f33ab47581fc5183 {"status":"FINALIZED"}
+[debug] [2022-12-10T13:00:12.546Z] <<< [apiv2][status] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/861993382956/sites/hall-management-system-cd7ad/versions/f33ab47581fc5183 200
+[debug] [2022-12-10T13:00:12.547Z] <<< [apiv2][body] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/861993382956/sites/hall-management-system-cd7ad/versions/f33ab47581fc5183 {"name":"projects/861993382956/sites/hall-management-system-cd7ad/versions/f33ab47581fc5183","status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2022-12-10T13:00:10.479801Z","createUser":{"email":"mdriyadtalukder69@gmail.com"},"finalizeTime":"2022-12-10T13:00:18.052069Z","finalizeUser":{"email":"mdriyadtalukder69@gmail.com"}}
+[debug] [2022-12-10T13:00:12.547Z] [hosting] finalized version for hall-management-system-cd7ad:[object Object]
+[info] +  hosting[hall-management-system-cd7ad]: version finalized 
+[info] i  hosting[hall-management-system-cd7ad]: releasing new version... 
+[debug] [2022-12-10T13:00:12.550Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/861993382956/sites/hall-management-system-cd7ad/releases versionName=projects%2F861993382956%2Fsites%2Fhall-management-system-cd7ad%2Fversions%2Ff33ab47581fc5183
+[debug] [2022-12-10T13:00:12.550Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/861993382956/sites/hall-management-system-cd7ad/releases {"message":null}
+[debug] [2022-12-10T13:00:15.516Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/861993382956/sites/hall-management-system-cd7ad/releases 200
+[debug] [2022-12-10T13:00:15.516Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/861993382956/sites/hall-management-system-cd7ad/releases {"name":"projects/861993382956/sites/hall-management-system-cd7ad/releases/1670677220446109","version":{"name":"projects/861993382956/sites/hall-management-system-cd7ad/versions/f33ab47581fc5183","status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2022-12-10T13:00:10.479801Z","createUser":{"email":"mdriyadtalukder69@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/AEdFTp4x22rkxi8oL3NLcVXoywPAnY47y3VUZJcWXatP"},"finalizeTime":"2022-12-10T13:00:18.052069Z","finalizeUser":{"email":"mdriyadtalukder69@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/AEdFTp4x22rkxi8oL3NLcVXoywPAnY47y3VUZJcWXatP"}},"type":"DEPLOY","releaseTime":"2022-12-10T13:00:20.446109213Z","releaseUser":{"email":"mdriyadtalukder69@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/AEdFTp4x22rkxi8oL3NLcVXoywPAnY47y3VUZJcWXatP"}}
+[debug] [2022-12-10T13:00:15.517Z] [hosting] release: {"name":"projects/861993382956/sites/hall-management-system-cd7ad/releases/1670677220446109","version":{"name":"projects/861993382956/sites/hall-management-system-cd7ad/versions/f33ab47581fc5183","status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2022-12-10T13:00:10.479801Z","createUser":{"email":"mdriyadtalukder69@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/AEdFTp4x22rkxi8oL3NLcVXoywPAnY47y3VUZJcWXatP"},"finalizeTime":"2022-12-10T13:00:18.052069Z","finalizeUser":{"email":"mdriyadtalukder69@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/AEdFTp4x22rkxi8oL3NLcVXoywPAnY47y3VUZJcWXatP"}},"type":"DEPLOY","releaseTime":"2022-12-10T13:00:20.446109213Z","releaseUser":{"email":"mdriyadtalukder69@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/AEdFTp4x22rkxi8oL3NLcVXoywPAnY47y3VUZJcWXatP"}}
+[info] +  hosting[hall-management-system-cd7ad]: release complete 
+[info] 
+[info] +  Deploy complete! 
+[info] 
+[info] Project Console: https://console.firebase.google.com/project/hall-management-system-cd7ad/overview
+[info] Hosting URL: https://hall-management-system-cd7ad.web.app
